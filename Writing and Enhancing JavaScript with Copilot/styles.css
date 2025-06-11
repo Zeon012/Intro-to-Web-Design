@@ -256,6 +256,36 @@ nav a:hover {
     color: #222;
 }
 
+/* Error styling */
+.error {
+    border: 2px solid red;
+}
+
+/* Lightbox modal styles */
+.lightbox-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0; width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.8);
+    justify-content: center; align-items: center;
+}
+
+.lightbox-modal.show {
+    display: flex;
+}
+
+.lightbox-modal img {
+    max-width: 90vw;
+    max-height: 80vh;
+}
+
+.lightbox-modal .close {
+    position: absolute;
+    top: 20px; right: 40px;
+    color: #fff; font-size: 2rem; cursor: pointer;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
     nav {
