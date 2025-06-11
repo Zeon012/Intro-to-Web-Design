@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Web Developer</title>
+    <meta name="description" content="Portfolio of a passionate web developer showcasing projects, skills, and contact information.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav role="navigation" aria-label="Main Navigation">
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>
+                Hi! I'm a passionate web developer with experience in building modern, responsive websites and web applications. I enjoy solving problems and learning new technologies.
+            </p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <article>
+                <figure>
+                    <img src="project1.png" alt="Screenshot of a personal portfolio website homepage with navigation and featured projects" width="200">
+                    <figcaption>Project 1: Portfolio Website</figcaption>
+                </figure>
+                <p>A personal portfolio website to showcase my work and skills.</p>
+            </article>
+            <article>
+                <figure>
+                    <img src="project2.png" alt="Screenshot of a task manager app interface showing tasks and controls" width="200">
+                    <figcaption>Project 2: Task Manager App</figcaption>
+                </figure>
+                <p>A simple task manager app built with HTML, CSS, and JavaScript.</p>
+            </article>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/html5.svg" alt="HTML5 logo" width="24" height="24"> HTML5</li>
+                <li><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/css3.svg" alt="CSS3 logo" width="24" height="24"> CSS3</li>
+                <li><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/javascript.svg" alt="JavaScript logo" width="24" height="24"> JavaScript</li>
+                <li><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/react.svg" alt="React logo" width="24" height="24"> React</li>
+                <li><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/nodedotjs.svg" alt="Node.js logo" width="24" height="24"> Node.js</li>
+                <li><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg" alt="GitHub logo" width="24" height="24"> Git &amp; GitHub</li>
+            </ul>
+        </section>
+        <section id="contact-section">
+            <h2>Contact</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input id="name" type="text" name="name" required aria-required="true">
+
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="email" required aria-required="true">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required aria-required="true"></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Portfolio</p>
+    </footer>
+</body>
+</html>

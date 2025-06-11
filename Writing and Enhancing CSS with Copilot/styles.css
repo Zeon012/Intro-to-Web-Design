@@ -1,0 +1,292 @@
+/* Basic body styles */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6fa;
+    color: #222;
+}
+
+/* Header and navigation */
+header {
+    background: #2d3e50;
+    color: #fff;
+    padding: 2rem 0 1rem 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background: #223042;
+    padding: 0.5rem 0;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #ffb347;
+}
+
+/* About Me section */
+#about {
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 700px;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    padding: 1rem;
+    background: #fff;
+    -webkit-box-shadow: 0 2px 8px rgba(44,62,80,0.07);
+    box-shadow: 0 2px 8px rgba(44,62,80,0.07);
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+
+/* Projects section - center heading and content */
+#projects {
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 900px;
+    padding: 1rem 0;
+}
+
+/* Projects row for card layout */
+.projects-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: stretch;
+    padding: 1rem 0;
+}
+
+/* Project card styling */
+.project-card {
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.07);
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 300px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    transition: box-shadow 0.2s;
+}
+
+.project-card:focus-within,
+.project-card:hover {
+    box-shadow: 0 4px 16px rgba(44,62,80,0.15);
+}
+
+.project-card figure {
+    margin: 0 0 1rem 0;
+    text-align: center;
+}
+
+.project-card img {
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.project-card figcaption {
+    margin: 0.5rem 0 0.5rem 0;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Skills section with icons */
+#skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+#skills li {
+    position: relative;
+    padding-left: 2rem;
+    font-size: 1.1rem;
+}
+
+#skills li::before {
+    content: "✔️";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.2rem;
+}
+
+/* Contact form */
+#contact {
+    background: #fff;
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    -webkit-box-shadow: 0 2px 8px rgba(44,62,80,0.07);
+    box-shadow: 0 2px 8px rgba(44,62,80,0.07);
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    align-items: stretch; /* Ensures children take full width */
+}
+
+#contact label {
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    display: block;
+}
+
+#contact textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    outline: 2px solid #2d3e50;
+    border-color: #ffb347;
+}
+
+#contact button {
+    background: #2d3e50;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    align-self: flex-start; /* Button aligns with inputs */
+}
+
+#contact button:hover {
+    background: #ffb347;
+    color: #222;
+}
+
+/* Contact form: align fields in vertical columns */
+#contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#contact-section label {
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+    display: block;
+}
+
+#contact-section input,
+#contact-section textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+#contact-section button {
+    align-self: flex-start;
+    background: #2d3e50;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#contact-section button:hover {
+    background: #ffb347;
+    color: #222;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    #projects {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-card {
+        width: 90%;
+    }
+}
+
+/* Responsive images/videos */
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Improve image readability on mobile */
+@media (max-width: 600px) {
+    img {
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(44,62,80,0.10);
+        background: #fff;
+        padding: 4px;
+        max-width: 98vw;
+    }
+}
